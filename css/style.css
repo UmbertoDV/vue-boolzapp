@@ -1,0 +1,25 @@
+body {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+		to bottom,
+		#009688 0%,
+		#009688 15%,
+		#dadbd2 15%,
+		#dadbd2 100%
+	);
+}
+.layout-app {
+	background-color: #eaeaea;
+	height: 90vh;
+	width: 80%;
+	margin: 0 auto;
+	transform: translate(0, 5%);
+}
+.left-side {
+	background-color: red;
+	width: 35%;
+}
+.right-side {
+	background-image: url(../img/mine.jpg);
+}
