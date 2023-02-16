@@ -43,15 +43,247 @@
 	</head>
 
 	<body>
-		<div class="background">
-			<div class="h-background"></div>
-			<div class="f-background"></div>
-		</div>
-		<div id="app">
-			<div class="layout-app d-flex">
-				<div class="left-side"></div>
-				<div class="right-side"></div>
-			</div>
+		<div id="app" class="app">
+			<!-- CONTACTS LEFT COLUMN -->
+			<section class="contacts-col d-flex flex-column">
+				<!-- HEADER CONTACTS COL -->
+				<header class="contacts-col--header d-flex justify-content-between p-2">
+					<div class="d-flex align-items-center">
+						<img src="./img/avatar_io.jpg" class="avatar" alt="" />
+						<p class="my-0 mx-2">Sofia</p>
+					</div>
+					<div class="d-flex align-items-center icons">
+						<i class="fa-solid fa-circle-notch mx-2"></i>
+						<i class="fa-solid fa-message mx-2"></i>
+						<i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+					</div>
+				</header>
+
+				<!-- DISCLAIMER CONTACTS COL -->
+				<div class="disclaimer d-flex align-items-center p-2">
+					<div class="avatar">
+						<i class="fa-solid fa-bell-slash"></i>
+					</div>
+					<p class="my-0 mx-2">
+						Ricevi notifiche di nuovi messaggi<br />
+						<a href="#" class="disclaimer-link"> Attiva notifiche desktop </a>
+					</p>
+				</div>
+
+				<!-- SEARCH CONTACTS -->
+				<div class="search-contacts d-flex align-items-center p-2">
+					<div class="search-contacts--icon p-2">
+						<i class="fa-solid fa-magnifying-glass mx-2"></i>
+					</div>
+					<input
+						class="p-2"
+						type="text"
+						placeholder="Cerca o inizia una nuova chat"
+					/>
+				</div>
+
+				<!-- LIST CONTACTS -->
+				<ul class="list-contacts flex-grow-1 m-0 p-0">
+					<li class="list-contacts--contact contact--active d-flex p-2">
+						<div class="contact--left d-flex flex-grow-1">
+							<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+							<p class="my-0 mx-2">
+								Michele<br />
+								<span class="latest-access"
+									>Ultimo accesso ore 12:00</span
+								>
+							</p>
+						</div>
+
+						<span class="latest-access">12:00</span>
+					</li>
+
+					<li class="list-contacts--contact d-flex p-2">
+						<div class="contact--left d-flex flex-grow-1">
+							<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+							<p class="my-0 mx-2">
+								Michele<br />
+								<span class="latest-access"
+									>Ultimo accesso ore 12:00</span
+								>
+							</p>
+						</div>
+
+						<span class="latest-access">12:00</span>
+					</li>
+
+					<li class="list-contacts--contact d-flex p-2">
+						<div class="contact--left d-flex flex-grow-1">
+							<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+							<p class="my-0 mx-2">
+								Michele<br />
+								<span class="latest-access"
+									>Ultimo accesso ore 12:00</span
+								>
+							</p>
+						</div>
+
+						<span class="latest-access">12:00</span>
+					</li>
+
+					<li class="list-contacts--contact d-flex p-2">
+						<div class="contact--left d-flex flex-grow-1">
+							<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+							<p class="my-0 mx-2">
+								Michele<br />
+								<span class="latest-access"
+									>Ultimo accesso ore 12:00</span
+								>
+							</p>
+						</div>
+
+						<span class="latest-access">12:00</span>
+					</li>
+
+					<li class="list-contacts--contact d-flex p-2">
+						<div class="contact--left d-flex flex-grow-1">
+							<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+							<p class="my-0 mx-2">
+								Michele<br />
+								<span class="latest-access"
+									>Ultimo accesso ore 12:00</span
+								>
+							</p>
+						</div>
+
+						<span class="latest-access">12:00</span>
+					</li>
+				</ul>
+			</section>
+
+			<!-- CHAT RIGHT COLUMN -->
+			<section class="chat-col d-flex flex-column">
+				<!-- HEADER CHAT COL -->
+				<header class="contacts-col--header d-flex justify-content-between p-2">
+					<div class="d-flex align-items-center">
+						<img src="./img/avatar_1.jpg" class="avatar" alt="" />
+						<p class="my-0 mx-2">
+							Michele<br />
+							<span class="latest-access">Ultimo accesso ore 12:00</span>
+						</p>
+					</div>
+					<div class="d-flex align-items-center icons">
+						<i class="fa-solid fa-magnifying-glass mx-2"></i>
+						<i class="fa-solid fa-paperclip mx-2"></i>
+						<i class="fa-solid fa-ellipsis-vertical mx-2"></i>
+					</div>
+				</header>
+
+				<!-- MAIN CHAT -->
+				<div class="main-chat flex-grow-1 d-flex flex-column align-items-start">
+					<div class="message received p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message received p-2 m-2">
+						<p class="p-0 m-0">Hai portato a spasso il cane?</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">Ok.</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+
+					<div class="message sent p-2 m-2">
+						<p class="p-0 m-0">
+							Hai portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?Hai portato a spasso il cane? Hai
+							portato a spasso il cane?Hai portato a spasso il cane?Hai
+							portato a spasso il cane?
+						</p>
+						<small class="message-date">15:30</small>
+					</div>
+				</div>
+
+				<!-- SEND MESSAGE -->
+				<footer class="send-message-bar d-flex py-3">
+					<div class="d-flex align-items-center icons px-4 py-2">
+						<i class="fa-regular fa-face-smile mx-2"></i>
+					</div>
+					<div class="flex-grow-1">
+						<input
+							type="text"
+							placeholder="Scrivi un messaggio"
+							class="send-message-input px-4 p-2"
+						/>
+					</div>
+					<div class="d-flex align-items-center icons px-4 py-2">
+						<i class="fa-solid fa-microphone mx-2"></i>
+					</div>
+				</footer>
+			</section>
 		</div>
 	</body>
 </html>
