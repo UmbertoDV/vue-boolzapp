@@ -166,7 +166,32 @@ createApp({
 					],
 				},
 			],
-			activeContact: 0,
+
+			newMessage: {
+				date: "23:00",
+				text: "",
+				status: "sent",
+			},
+
+			activeContact: 2,
 		};
+	},
+
+	methods: {
+		sendMessage() {
+			this.contacts[this.activeContact].messages.push({
+				date: this.newMessage.date,
+				text: this.newMessage.text,
+				status: this.newMessage.status,
+			});
+
+			setTimeout(() => {
+				this.contacts[this.activeContact].messages.push({
+					date: "23:01",
+					text: "OK",
+					status: "received",
+				});
+			}, 1000);
+		},
 	},
 }).mount("#app");
